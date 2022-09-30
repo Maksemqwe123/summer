@@ -1,0 +1,26 @@
+# n = 340
+# print(f'{n + (n * 2) + (n * 3)}')
+
+
+
+
+# my_dict = {'a': 500, 'b': 5874, 'c': 560, 'd': 400, 'e': 5874, 'f': 20}
+# result = sorted(my_dict, key=my_dict.get, reverse=True)
+
+# numbers_1 = [12, 58, 36, 85, 125, 92, 247, 237, 166, 144]
+# for i in numbers_1:
+#     if i == 237:
+#         break
+#     elif i % 2 == 0:
+#         print(i)
+
+
+# list_1 = [25, 85, 115, 96, 45, 81, 33, 185, 63]
+# list_2 = [35, 58, 85, 69, 36, 14, 25, 785, 364, 89, 15]
+#
+# for i in list_1:
+#     for x in list_2:
+#         if x == i:
+#             print(f'{x}, {i}')
+#     continue
+#     break
