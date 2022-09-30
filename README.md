@@ -1,2 +1,113 @@
 # summer
-file:/C:/new%20life/pythonProject/akinator.py
+"""Акинатор по животным"""
+
+Choice = input('Привет!\nХочешь сыграть со мной ?\n')
+
+
+if Choice.lower() == 'да' or Choice.lower() == 'давай':
+    print('Отлично, загадай животное, а я попробую угадать')
+
+    Start = input('Начнём?\n')
+
+    if Start.lower() == 'да' or Start.lower() == 'давай':
+        print('Отлично, отвечай только да или нет')
+    else:
+        print('Даю время ещё подумать')
+
+    Predator = input('Это хищное животное ?\n')
+
+    if Predator.lower() == 'да':
+
+        Feline_family = input('Это животное относится к семейству кошачьих ?\n')
+
+        if Feline_family.lower() == 'да':
+
+            Habitat = input('Это животное обитает Африке ?\n')
+
+            if Habitat.lower() == 'да':
+
+                Rock_Climber = input('Это животное умеет лазать по деревьям ?\n')
+
+                if Rock_Climber.lower() == 'да':
+
+                    Striped = input('У этого животного есть полоски на теле ?\n')
+
+                    if Striped.lower() == 'да':
+                        print('Это тигр')
+
+        elif Feline_family.lower() == 'нет':
+
+            Ground = input('Это животное ходит по суше ?\n')
+
+            if Ground.lower() == 'да':
+
+                Habitat = input('Это животное обитает Африке ?\n')
+
+                if Habitat.lower() == 'да':
+
+                    Spots = input('У этого животного есть пятна на теле ?\n')
+
+                    if Spots.lower() == 'да':
+                        print('Это гиена')
+
+                elif Habitat.lower() == 'нет':
+
+                    Habitat_1 = input('Это животное обитает в Европе ?\n')
+
+                    if Habitat_1.lower() == 'да':
+
+                        Forest = input('Это животное обитает в лесу ?\n')
+
+                        if Forest.lower() == 'да':
+
+                            Hibernation = input('Это животное впадает в спячку ?\n')
+
+                            if Hibernation.lower() == 'да':
+                                print('Это медведь')
+
+                            elif Hibernation.lower() == 'нет':
+
+                                Moon = input('Это животное воет на луну ?\n')
+
+                                if Moon.lower() == 'да':
+                                    print('Это волк')
+
+                                elif Moon.lower() == 'нет':
+                                    print('Это лиса')
+
+            elif Ground.lower() == 'нет':
+
+                Water = input('Это животное обитает в воде ?\n')
+
+                if Water.lower() == 'да':
+
+                    Scales = input('У этого животного зелёная чешуя ?\n')
+
+                    if Scales.lower() == 'да':
+                        print('Это крокодил')
+
+    elif Predator.lower() == 'нет':
+
+        Herbivore = input('Это травоядное животное ?\n')
+
+        if Herbivore.lower() == 'да':
+
+            Ground = input('Это животное ходит по суше ?\n')
+
+            if Ground.lower() == 'да':
+
+                Habitat = input('Это животное обитает Африке ?\n')
+
+                if Habitat.lower() == 'да':
+
+                    Rider = input('Это животное можно оседлать ?\n')
+
+                    if Rider.lower() == 'да':
+
+                        Survival = input('Это животное может долго обходиться без воды и еды ?\n')
+
+                        if Survival.lower() == 'да':
+                            print('Это верблюд')
+
+else:
+    print('До скорых встреч)')
